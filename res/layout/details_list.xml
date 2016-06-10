@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ExpandableListView
+            android:minWidth="25dp"
+            android:minHeight="25dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"            
+            android:id="@+id/details" />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailsProgress"
+            android:clickable="false"
+            android:layout_centerInParent="true"
+            android:longClickable="false"
+            android:visibility="gone"
+            android:layout_gravity="center" />
+
+    </RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<TextView     
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/favorite_settings_text1"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:gravity="center_vertical"    
+    android:text="@string/menetrend_szinkronizalasa"
+    android:paddingLeft="6dip"
+    android:layout_alignParentLeft="true"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+/>
+<CheckBox
+    android:id="@+id/favorite_settings_check1"
+    android:layout_width="wrap_content"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:gravity="center_vertical"
+    android:paddingRight="6dip"
+    android:layout_alignParentRight="true"
+/>
+<TextView     
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:gravity="center_vertical"
+    android:text="@string/allomasok_szinkronizalasa"
+    android:paddingLeft="6dip"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@id/favorite_settings_text1"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+/>
+<CheckBox
+    android:id="@+id/favorite_settings_check2"
+    android:layout_width="wrap_content"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:gravity="center_vertical"
+    android:paddingRight="6dip"
+    android:layout_below="@id/favorite_settings_check1"
+    android:layout_alignParentRight="true"
+/>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:baselineAligned="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <fragment
+        android:id="@+id/search_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        class="hu.pethical.mavkep.fragments.SearchFragment"
+        tools:layout="@layout/main" />
+	<LinearLayout
+	    android:layout_width="1dp"
+	    android:layout_height="fill_parent"
+	    android:background="@android:color/darker_gray"
+	     ></LinearLayout>
+    <fragment
+        android:id="@+id/favorite_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        class="hu.pethical.mavkep.fragments.FavoriteFragment"
+        tools:layout="@layout/favorites" />
+
+</LinearLayout>

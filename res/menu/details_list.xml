@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/show_on_map"
+        android:orderInCategory="100"
+        android:icon="@drawable/location_map"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/terkep"/>
+    <item
+        android:id="@+id/refresh_details"
+        android:orderInCategory="100"
+        android:icon="@drawable/refresh"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/reszletek_frissitese"/>
+    
+</menu>

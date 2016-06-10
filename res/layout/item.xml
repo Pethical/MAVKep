@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="6dp"
+        android:id="@+id/csik"
+        android:layout_height="fill_parent" />
+    <ImageView
+        android:id="@+id/fw"
+        android:src="@drawable/forward"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/Text"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/From"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text=" - "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/To"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView1"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/snail" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/Info"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp" />
+                <TextView
+                    android:id="@+id/Platform"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/When"
+                android:text=""
+                android:layout_width="95dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="20dp"
+                android:gravity="right" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/kesescsik"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/Keses"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+            <RelativeLayout
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/RealTime"
+                    android:layout_width="90dp"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:gravity="right"
+                    android:layout_height="20dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

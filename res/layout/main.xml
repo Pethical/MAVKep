@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content">            
+            <ImageButton
+                android:src="@drawable/location_searching"
+                android:id="@+id/where1"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                />
+            <AutoCompleteTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/FromTextView"
+                android:hint="@string/indulas"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/where1"                
+                android:layout_margin="5dp"
+                style="@style/AppTextTheme"
+                android:text=""
+                android:maxLines="1" />
+<!--                 android:textColor="@android:color/primary_text_light" -->
+
+            <ImageButton
+                android:id="@+id/a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/where1"
+                android:layout_marginTop="18dp"
+                android:background="@android:color/transparent"
+                android:baselineAlignBottom="true"
+                android:src="@drawable/swap" />
+           
+            <AutoCompleteTextView
+                android:layout_margin="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/a"                
+                android:id="@+id/ToTextView"        
+                style="@style/AppTextTheme"        
+                android:hint="@string/erkezes"
+                android:layout_below="@id/FromTextView"
+                android:text=""
+                android:maxLines="1" />            
+<!--                 android:textColor="@android:color/primary_text_light"-->
+            <AutoCompleteTextView
+                android:layout_margin="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/keresztul"
+                android:layout_below="@id/ToTextView"
+                android:textColor="@android:color/primary_text_light"
+                android:hint="@string/keresztul"
+                style="@style/AppTextTheme"
+                android:text=""
+                android:maxLines="1"/>
+            <LinearLayout
+                android:id="@+id/dateslayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/keresztul"
+                android:orientation="horizontal">
+                <EditText
+                    android:inputType="date"
+                    android:layout_margin="5dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="true"
+                    android:id="@+id/startdate"
+                    android:hint="@string/utazas_datuma"
+                    android:maxLength="10" />
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.5"
+                    android:maxHeight="48dp"        
+                    android:padding="2dp"            
+                    android:text="@string/kereses" />
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dateslayout"
+                android:id="@+id/ButtonsLayout"
+                android:orientation="horizontal">
+                <!-- Button
+                    android:id="@+id/visszaut"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/visszaut" /-->
+            </LinearLayout>
+            <TextView
+                android:text="@string/reszletes_beallitasok"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/ButtonsLayout"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:id="@+id/textView1"                
+                 />
+           <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView1"                
+                android:id="@+id/op1"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+                <ToggleButton                    
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="140dp"
+                    android:layout_weight="0.5"                                        
+                    android:id="@+id/bpberlet"
+                    android:textOn="@string/budapest_berlet"
+                    android:textOff="@string/budapest_berlet"
+                    android:ellipsize="none" />
+                <ToggleButton
+                    android:ellipsize="none"                   
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:id="@+id/atszallas"
+                    android:textOn="@string/atszallas_nelkul"
+                    android:textOff="@string/atszallas_nelkul" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/op1"                
+                android:orientation="horizontal"
+                android:padding="5dp" >            
+                <ToggleButton
+                    android:ellipsize="none"
+                    android:layout_weight="0.5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"                   
+                    android:id="@+id/potjegy"
+                    android:textOn="@string/potjegy_nelkul"
+                    android:textOff="@string/potjegy_nelkul" />
+                <ToggleButton               
+                    android:ellipsize="none"    
+                    android:layout_weight="0.5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/kerekpar"
+                    android:textOn="@string/kerekparral"
+                    android:textOff="@string/kerekparral" />
+            </LinearLayout>
+        </RelativeLayout>
+</ScrollView>

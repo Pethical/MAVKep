@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/favorites"
+        android:orderInCategory="1"
+        android:icon="@drawable/device_access_storage"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/kedvencek"/>
+    <item
+        android:id="@+id/showmap"
+        android:orderInCategory="3"
+        android:icon="@drawable/location_map"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/terkep"/>
+    <item
+        android:id="@+id/clearthecache"
+        android:orderInCategory="4"
+        android:icon="@drawable/clear_cache"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/gyorstar_uritese"/>
+</menu>
